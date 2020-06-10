@@ -24,14 +24,17 @@ class PointsController {
                 latitude,
                 longitude,
                 uf,
-                city
+                city                
         }
         
         const insertedIds = await trx('points').insert(point);
     
         const point_id = insertedIds[0];
     
-        const pointItems = items.map((item_id: number) => {
+        const pointItems = items
+        .split(',')
+        .map((item: string) => Number(item.trim()))
+        .map((item_id: number) => {
             return {
                 item_id,
                 point_id,
@@ -41,7 +44,7 @@ class PointsController {
         await trx('point_items').insert(pointItems);
 
         await trx.commit();
-    
+
         return response.json({
             id: point_id,
             ...point,
