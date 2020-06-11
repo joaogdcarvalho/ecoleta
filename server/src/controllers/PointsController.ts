@@ -2,29 +2,30 @@ import { Request, Response } from 'express';
 import knex from '../database/connection';
 
 class PointsController {
-    async create(request: Request, response: Response) {
+
+    async create_(request: Request, response: Response) {
         const {
             name,
             email,
             whatsapp,
             latitude,
             longitude,
-            uf,
             city,
+            uf,
             items
         } = request.body;
         
         const trx = await knex.transaction();
 
         const point = {
-                image: 'https://images.unsplash.com/photo-1556767576-5ec41e3239ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60',
-                name,
-                email,
-                whatsapp,
-                latitude,
-                longitude,
-                uf,
-                city                
+            image: 'https://images.unsplash.com/photo-1556767576-5ec41e3239ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60',
+            name,
+            email,
+            whatsapp,
+            latitude,
+            longitude,
+            city,
+            uf          
         }
         
         const insertedIds = await trx('points').insert(point);
