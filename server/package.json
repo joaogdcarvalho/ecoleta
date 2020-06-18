@@ -1,6 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts",
@@ -10,13 +11,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "knex": "^0.21.1",
     "multer": "^1.4.2",
-    "muter": "^0.7.0",
     "sqlite3": "^4.2.0"
   },
   "devDependencies": {
