@@ -18,6 +18,7 @@
     "react-leaflet": "^2.7.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "shell-quote": "^1.7.3",
     "typescript": "^3.7.5"
   },
   "scripts": {
