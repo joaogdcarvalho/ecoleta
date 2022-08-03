@@ -30,7 +30,8 @@
     "react-native-safe-area-context": "3.0.7",
     "react-native-screens": "~2.9.0",
     "react-native-svg": "12.1.0",
-    "react-native-web": "~0.13.0"
+    "react-native-web": "~0.13.0",
+    "shell-quote": "^1.7.3"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
