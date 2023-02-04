@@ -10,7 +10,7 @@
   "dependencies": {
     "@expo-google-fonts/roboto": "^0.1.0",
     "@expo-google-fonts/ubuntu": "^0.1.0",
-    "@react-native-community/masked-view": "0.1.10",
+    "@react-native-community/masked-view": "0.1.11",
     "@react-navigation/native": "^5.6.1",
     "@react-navigation/stack": "^5.6.2",
     "ansi-regex": "^6.0.1",
