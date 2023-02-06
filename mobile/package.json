@@ -18,8 +18,8 @@
     "expo": "^46.0.7",
     "expo-constants": "^13.2.3",
     "expo-font": "^10.2.0",
-    "expo-location": "~8.2.1",
-    "expo-mail-composer": "~8.2.1",
+    "expo-location": "~8.3.0",
+    "expo-mail-composer": "~8.4.0",
     "hermes-engine": "^0.11.0",
     "logkitty": "^0.7.1",
     "mem": "^6.1.1",
@@ -43,7 +43,7 @@
     "@babel/core": "^7.10.3",
     "@types/react": "~16.14.0",
     "@types/react-native": "~0.62.14",
-    "babel-preset-expo": "~8.2.3",
+    "babel-preset-expo": "~8.5.0",
     "typescript": "~3.9.5"
   },
   "private": true
