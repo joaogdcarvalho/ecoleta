@@ -17,7 +17,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^4.0.0",
-    "react-leaflet": "^2.7.0",
+    "react-leaflet": "^4.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.1",
     "shell-quote": "^1.7.3",
